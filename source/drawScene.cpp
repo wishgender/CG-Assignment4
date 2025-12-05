@@ -123,7 +123,7 @@ void drawCameraBarrel(float radius, float height) {
 
     //= Draw face
     glPushMatrix();
-    glRotatef(180.0f, 1.0f, 0.0f, 0.0f);  // flip to face downward
+    glRotatef(180.0f, 1.0f, 0.0f, 0.0f);  //= flip to face downward
     gluDisk(quad, 0.0, radius, 16, 1);
     glPopMatrix();
 

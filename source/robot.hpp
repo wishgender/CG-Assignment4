@@ -80,8 +80,8 @@ public:
 private:
     bool bulletCollision, playerCollision; //= collision flags
 
-    bool beenShot; 
-    bool isDead; //= has the robot been shot?
+    bool beenShot; //= has the robot been shot?
+    bool isDead; //= is the robot dead (dying)
     float deathTimer; //= time since death (used with death animation)
     float alpha; //= transparency for fade animation
 
@@ -89,7 +89,7 @@ private:
     float legAngle; //= angle of legs
     GLdouble yIndex; //= y-index of robot
     
-    Color* colliderColor;
+    Color* colliderColor; //= pointer to robot collider color
     Color* bodyColor; //= pointer to robot body color
     Color* bodyEdgeColor; //= pointer to robot body edge color
     Color* headColor; //= pointer to robot head color

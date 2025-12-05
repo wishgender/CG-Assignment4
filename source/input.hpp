@@ -12,8 +12,6 @@
 static float aspectRatio;
 extern GLint LMB, MMB, RMB;
 
-void displayControls();
-
 void KeyboardInputCallback(unsigned char key, int x, int y);
 
 void ProcessSpecialKeys(int, int, int);
@@ -31,7 +29,5 @@ bool canMove(const Point&);
 void ReshapeDisplay(int, int);
 
 void ResetGame();
-
-void GameMenu();
 
 void drawPauseMenu();

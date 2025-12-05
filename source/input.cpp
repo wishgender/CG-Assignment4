@@ -64,7 +64,7 @@ void KeyboardInputCallback(unsigned char key, int x, int y) {
             }
 
             bullets.emplace_back(CAMERA_X, CAMERA_Y, CAMERA_Z, lx, lz, speedValue);
-            if (soundOn) ma_engine_play_sound(&engine, "./resources/sounds/gunfire.wav", NULL);
+            if (soundOn) ma_engine_play_sound(&engine, "./resources/sounds/gunfire.wav", NULL); //= play gunfire sound
             break;
         }
         glutPostRedisplay();
@@ -319,7 +319,4 @@ void drawPauseMenu() {
     glMatrixMode(GL_PROJECTION);
     glPopMatrix();
     glMatrixMode(GL_MODELVIEW);
-}
-void keyboard(unsigned char key, int x, int y) {
-    
 }

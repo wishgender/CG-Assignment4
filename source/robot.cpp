@@ -467,6 +467,7 @@ void Robot::drawHead() {
 
     glColor4f(headColor->getValues()[0], headColor->getValues()[1], headColor->getValues()[2], alpha);
 
+    //= set up texture
     glEnable(GL_TEXTURE_2D);
     glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
     glBindTexture(GL_TEXTURE_2D, headTexture);
@@ -506,7 +507,8 @@ void Robot::drawTorso() {
 
     //= set color
     glColor4f(bodyColor->getValues()[0], bodyColor->getValues()[1], bodyColor->getValues()[2], alpha);
-        
+    
+    //= set up texture
     glEnable(GL_TEXTURE_2D);
     glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
     glBindTexture(GL_TEXTURE_2D, bodyTexture);
@@ -550,6 +552,7 @@ void Robot::drawArm(float offset, float angle) {
     //= use arm color
     glColor4f(bodyColor->getValues()[0], bodyColor->getValues()[1], bodyColor->getValues()[2], alpha);
 
+    //= set up texture
     glEnable(GL_TEXTURE_2D);
     glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
     glBindTexture(GL_TEXTURE_2D, bodyTexture);
@@ -589,6 +592,7 @@ void Robot::drawLeg(float offset, float angle) {
     //= use legs color
     glColor4f(bodyColor->getValues()[0], bodyColor->getValues()[1], bodyColor->getValues()[2], alpha);
 
+    //= set up texture
     glEnable(GL_TEXTURE_2D);
     glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
     glBindTexture(GL_TEXTURE_2D, bodyTexture);

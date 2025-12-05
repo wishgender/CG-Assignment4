@@ -49,10 +49,6 @@ Grid::~Grid() {
 
 }
 
-//Grid& Grid::operator=(Grid rhs) {
-//    return;
-//}
-
 std::ostream& operator<<(std::ostream& out, const Grid& rhs) {
     for (int i = 0; i < GRID_SIZE; i++) {
         out << "| ";
@@ -80,12 +76,6 @@ std::vector<std::vector<gridSpace>> Grid::initGrid() {
     std::vector<std::vector<gridSpace>> gameGrid(GRID_SIZE, std::vector<gridSpace>(GRID_SIZE, EMPTY));
     return gameGrid;
 }
-
-//std::vector<std::vector<gridSpace>> Grid::initGrid() {
-//    std::vector<std::vector<gridSpace>> gameGrid(GRID_SIZE, std::vector<gridSpace>(GRID_SIZE, EMPTY));
-//    setGridSpace(gameGrid, PLAYER, GRID_SIZE / 2, GRID_SIZE / 2);
-//    return gameGrid;
-//}
 
 bool collision(const Point& p1, const Point& p2, const float& r1, const float& r2) {
     float distance = sqrt(
